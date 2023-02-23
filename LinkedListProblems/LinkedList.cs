@@ -42,8 +42,27 @@ namespace LinkedListProblems
                 }
                 Console.ReadLine();
             }
-
+        public void AddReverse(int data)
+        {
+            Node node = new Node(data);
+            if (head == null)
+            {
+                head = node;
+            }
+            else
+            {
+                Node temp = head;
+                node.Next = temp;
+                head = node;
+            }
+            Console.WriteLine($"{node.data} is now Head");
+            Console.ReadLine();
         }
+    
     }
+    
+}
+       
+    
 
 
