@@ -74,6 +74,16 @@ namespace LinkedListProblems
             else { head = node; }
             Console.ReadLine();
         }
+        public void RemoveFirstNode()
+        {
+            if (head == null)
+            {
+                Console.WriteLine("linked list is empty");
+            }
+            this.head = this.head.Next;
+            Console.WriteLine("the first element is deleted");
+            Console.ReadLine();
+        }
     }
 }
     
