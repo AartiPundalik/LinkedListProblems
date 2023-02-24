@@ -42,9 +42,15 @@ namespace LinkedListProblems
                         linkedlist.RemoveFirstNode();
                         break;
                     case 5:
-                        linkedlist.Display();
+                        linkedlist.Add(56);
+                        linkedlist.Add(30);
+                        linkedlist.Add(70);
+                        linkedlist.RemoveLastNode();
                         break;
                     case 6:
+                        linkedlist.Display();
+                        break;
+                    case 7:
                         Console.WriteLine("Enter Currect Option");
                         break;
                         
