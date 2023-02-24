@@ -58,10 +58,28 @@ namespace LinkedListProblems
             Console.WriteLine($"{node.data} is now Head");
             Console.ReadLine();
         }
-    
+        public void Append(int data)
+        {
+            Node node = new Node(data);
+            if (head != null)
+            {
+                Node temp = head;
+                while (temp.Next != null)
+                {
+                    temp = temp.Next;
+                }
+                temp.Next = node;
+                Console.WriteLine($"{node.data} is added after {temp.data}");
+            }
+            else { head = node; }
+            Console.ReadLine();
+        }
     }
-    
 }
+    
+    
+    
+
        
     
 

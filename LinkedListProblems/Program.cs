@@ -36,6 +36,11 @@ namespace LinkedListProblems
                         linkedlist.AddReverse(30);
                         linkedlist.AddReverse(70);
                         break;
+                    case 4:
+                        linkedlist.Append(56);
+                        linkedlist.Append(30);
+                        linkedlist.Append(70);
+                        break;
                         Console.ReadLine();
                 }
             }
