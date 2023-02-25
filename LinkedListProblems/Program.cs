@@ -48,10 +48,13 @@ namespace LinkedListProblems
                         linkedlist.RemoveLastNode();
                         break;
                     case 6:
+                        linkedlist.Add(56);
+                        linkedlist.Add(56);
+                        linkedlist.Add(56);
                         linkedlist.Search(56);
                         linkedlist.Search(30);
                         break;
-                    case 8:
+                    case 7:
                         linkedlist.Display();
                         break;
                     

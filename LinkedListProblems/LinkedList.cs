@@ -106,29 +106,34 @@ namespace LinkedListProblems
                 Console.WriteLine("the last element is deleted");
             }
         }
-        public void Search(int value)
+        public void Search(int Data)
         {
-            bool doesExists = false;
-            if (head != null)
+            int count = 0;
+            Node tempNode = this.head;
+            if (tempNode == null)
+                Console.WriteLine("Linke list is empty");
+            else
             {
-                int count = 0;
-                Node temp = head;
-                while (temp != null)
+                while (tempNode != null)
                 {
-                    if (temp.Data == value) { doesExists = true; count++; }
-                    temp = temp.Next;
+                    if (tempNode.Data.Equals(Data))
+                    {
+                        count++;
+                    }
+                    tempNode = tempNode.Next;
                 }
-                if (doesExists) { Console.WriteLine($">>>>{value} exists {count} times"); }
-                else { Console.WriteLine($">>>>{value} is not present in list"); }
             }
-            Display();
+            if (count > 0)
+                Console.WriteLine(Data + " data found " + count + ": time ");
+            else
+                Console.WriteLine(" data not found\n");
         }
 
     }
-
-
-
 }
+
+
+
     
     
 
