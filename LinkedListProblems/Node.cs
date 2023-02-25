@@ -6,15 +6,16 @@ using System.Threading.Tasks;
 
 namespace LinkedListProblems
 {
-    public  class Node
+    public class Node
     {
-            public int data;
-            public Node Next;
-            public Node(int data)
-            {
-                this.data = data;
-            }
+        public int Data;
+        public Node Next;
+        public Node(int data)
+        {
+            Data = data;
         }
+
     }
+}
 
 

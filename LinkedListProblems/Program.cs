@@ -11,12 +11,12 @@ namespace LinkedListProblems
         static void Main(string[] args)
         {
             LinkedList linkedlist = new LinkedList();
+          
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("Please enter an option");
-                Console.WriteLine("1:");
-                Console.WriteLine("2:");
+                Console.WriteLine("Please enter an number");
+              
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -48,12 +48,13 @@ namespace LinkedListProblems
                         linkedlist.RemoveLastNode();
                         break;
                     case 6:
+                        linkedlist.Search(56);
+                        linkedlist.Search(30);
+                        break;
+                    case 8:
                         linkedlist.Display();
                         break;
-                    case 7:
-                        Console.WriteLine("Enter Currect Option");
-                        break;
-                        
+                    
                 }
             }
         }
