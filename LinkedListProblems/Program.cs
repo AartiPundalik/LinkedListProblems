@@ -55,6 +55,12 @@ namespace LinkedListProblems
                         linkedlist.Search(30);
                         break;
                     case 7:
+                        linkedlist.Add(56);
+                        linkedlist.Add(56);
+                        linkedlist.Add(56);
+                        linkedlist.Size();
+                        break;
+                    case 8:
                         linkedlist.Display();
                         break;
                     
