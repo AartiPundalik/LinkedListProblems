@@ -11,7 +11,9 @@ namespace LinkedListProblems
         static void Main(string[] args)
         {
             LinkedList linkedlist = new LinkedList();
-          
+            LinkedListStack Stack = new LinkedListStack();
+
+
             bool flag = true;
             while (flag)
             {
@@ -61,7 +63,22 @@ namespace LinkedListProblems
                         linkedlist.Size();
                         break;
                     case 8:
+                        Stack.Push(10);
+                        Stack.Push(20);
+                        Stack.Push(30);
+                        Stack.Display();
+                        break;
+                    case 9:
+                        Stack.Push(10);
+                        Stack.Push(20);
+                        Stack.Push(30);
+                        Stack.Pop();
+                        Stack.Display();
+                        break;
+                    case 10:
                         linkedlist.Display();
+                        break;
+                    default:Console.WriteLine("Enter current option");
                         break;
                     
                 }
