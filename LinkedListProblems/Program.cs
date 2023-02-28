@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,6 +13,7 @@ namespace LinkedListProblems
         {
             LinkedList linkedlist = new LinkedList();
             LinkedListStack Stack = new LinkedListStack();
+            Queue queue = new Queue();
 
 
             bool flag = true;
@@ -77,6 +79,17 @@ namespace LinkedListProblems
                         break;
                     case 10:
                         linkedlist.Display();
+                        break;
+                    case 11:
+                        queue.Enqueue(10);
+                        queue.Enqueue(20);
+                        queue.Enqueue(30);
+                        break;
+                    case 12:
+                        queue.Dequeue();
+                        break;
+                        case 13:
+                        queue.Display();
                         break;
                     default:Console.WriteLine("Enter current option");
                         break;
